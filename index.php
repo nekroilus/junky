@@ -7,5 +7,5 @@
  * http://php.net/manual/fr/language.variables.superglobals.php
  */
  
- echo "affichage de la variable GLOBALS";
+ echo "etude de la variable GLOBALS";
  var_dump($GLOBALS);
