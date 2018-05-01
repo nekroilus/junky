@@ -2,7 +2,7 @@
 /**
  * php-decouverte.bwb
  * Loïc DERRIEUX
- * Découverte des fonctionnalités de php et affinage de GIT
+ * Les variables super globales
  *
- * http://php.net/manual/fr/
+ * http://php.net/manual/fr/language.variables.superglobals.php
  */
