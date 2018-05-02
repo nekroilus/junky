@@ -7,5 +7,11 @@
  * http://php.net/manual/fr/language.variables.superglobals.php
  */
  
- echo "etude de la variable GLOBALS";
+ echo "affichage de la variable GLOBALS";
+ ?>
+ <p>
+	La variable $GLOBALS contient ceci et celà... si on fait ça alors il y a ça...
+ </p>
+ 
+ <?php
  var_dump($GLOBALS);
