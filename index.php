@@ -2,16 +2,12 @@
 /**
  * php-decouverte.bwb
  * Loïc DERRIEUX
- * Les variables super globales
+ * Structure de site web
  *
- * http://php.net/manual/fr/language.variables.superglobals.php
+ * http://php.net/manual/fr/function.include.php
+ *
  */
  
- echo "affichage de la variable GLOBALS";
- ?>
- <p>
-	La variable $GLOBALS contient ceci et celà... si on fait ça alors il y a ça...
- </p>
- 
- <?php
- var_dump($GLOBALS);
+include('template/header.php');
+include('template/content.php');
+include('template/footer.php');
