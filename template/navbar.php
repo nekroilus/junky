@@ -27,4 +27,5 @@ foreach($files as $file){
 		</form>
 		</div>
 	</nav>
+	</header>
 	<?php
