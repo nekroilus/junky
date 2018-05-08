@@ -13,7 +13,7 @@
 	foreach($files as $file){
 		if(is_file($linkPath . $file)){
 			$f = substr($file,0,strpos($file,".php"));
-			echo "<li><a href='?page=" . $f . "'>" . str_replace("_"," ",$f) . "</a></li>";
+			echo "<li><a href='/" . $f . "'>" . str_replace("_"," ",$f) . "</a></li>";
 		}		
 	}
 	

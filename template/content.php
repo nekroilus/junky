@@ -1,12 +1,9 @@
+
 <?php
 echo "content";
 echo "<br>";
 include('navbar.php');
 
-
-
-$content = $_GET['page'];
-
-include("contents". DIRECTORY_SEPARATOR . $content . ".php");
+include("contents". DIRECTORY_SEPARATOR . str_replace("/","",$_SERVER['REQUEST_URI']) . ".php");
 
 echo "<br>";
