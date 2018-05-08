@@ -2,7 +2,6 @@
 	
 	$linkPath = getcwd(). DIRECTORY_SEPARATOR . "contents" .DIRECTORY_SEPARATOR;
 	
-	$aStartTag = "<a href='";
 	
 	$files = scandir($linkPath);
 ?>

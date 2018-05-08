@@ -1,4 +1,5 @@
-<?php
+<footer>
 
-	echo "footer";
-	echo "<br>";
+</footer>
+</body>
+</html>

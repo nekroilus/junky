@@ -12,4 +12,3 @@ $_SERVER['REQUEST_URI'] = ($_SERVER['REQUEST_URI'] === "/")?"/home":$_SERVER['RE
 include("contents". DIRECTORY_SEPARATOR . str_replace("/","",$_SERVER['REQUEST_URI']) . ".php");
 
 ?>
-</body>
