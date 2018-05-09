@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * php-decouverte.bwb
  * Loïc DERRIEUX

@@ -20,11 +20,26 @@ foreach($files as $file){
 
 ?>
 		</ul>
-		<form class="form-inline mt-3 mt-md-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="username">
+		<?php 
+			if(isset($_SESSION['username'])){
+				?>
+		<form class="form-inline mt-3 mt-md-0" method="POST" action="scripts/disconnect.php">
+			<h4 class="mr-4"><?= $_SESSION['username'];?></h4>
+			<button class="btn btn-outline-success my-2 my-sm-0">LOGOUT</button>
+		</form>		
+				
+				<?php
+			}else{
+				?>
+		<form class="form-inline mt-3 mt-md-0" method="POST" action="scripts/connexion.php">
+			<input class="form-control mr-sm-2" type="text" placeholder="username" name="username">
 			<input class="form-control mr-sm-2" type="password" placeholder="password">
 			<button class="btn btn-outline-success my-2 my-sm-0">LOGIN</button>
 		</form>
+				<?php
+			}
+		?>
+		
 		</div>
 	</nav>
 	</header>
