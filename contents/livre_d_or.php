@@ -43,7 +43,7 @@
 		<aside class="col-md-4 blog-sidebar">
 			<div class="p-3 mb-3 bg-light rounded">
 				<h4 class="font-italic">Ajoutez un commentaire</h4>
-				<p class="mb-0">ça fait toujours plaisir et ça mange pas de pain.</p>
+				<p class="mb-0">ça fait toujours plaisir et ça ne mange pas de pain.</p>
 <?php 
 			if(!isset($_SESSION['username'])){
 				?> 
