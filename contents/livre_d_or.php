@@ -3,26 +3,11 @@
 		<div class="col-md-8 blog-main">
 			<h3 class="pb-3 mb-4 font-italic border-bottom">
 				Vous avez aimé ? Lachez votre commentaire :
-			</h3>
-
-			<div class="blog-post">
-				<h2 class="blog-post-title">Excellent</h2>
-				<p class="blog-post-meta">January 1, 2014 par <a href="#">Mark</a></p>
-
-				<p>L'accueil est vraiment sympa les serveurs sont magiques. Je recommande !</p>
-				<hr>
-			</div>
-			<div class="blog-post">
-				<h2 class="blog-post-title">Bonne ambiance</h2>
-				<p class="blog-post-meta">January 1, 2015 par <a href="#">Marie</a></p>
-
-				<p>On s'est assises, on a mangé et on a bu. Comme dirai l'autre</p>
-				<hr>
-			</div>
+			</h3>		
 			
 	<?php
-		if(isset($_SESSION['messages'])){
-			$messages = $_SESSION['messages'];
+			$messages = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/datas/messages.json"),true);
+
 			foreach($messages as $message){
 			?>
 			<div class="blog-post">
@@ -35,7 +20,6 @@
 				
 			<?php
 			}
-		}
 
 	?>
 

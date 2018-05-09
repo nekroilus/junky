@@ -1,12 +1,8 @@
 <?php
 	session_start();
-	$messages = array();
-	if(isset($_SESSION['messages'])){
-		$messages = $_SESSION['messages'];		
-	}else{
-		$_SESSION['messages'] = $messages;
-	}
 	
+	$messages = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/datas/messages.json"),true);
+
 	$message = array(
 			"titre" => $_POST['titre'],
 			"contenu" => $_POST['contenu'],
@@ -14,7 +10,13 @@
 			"auteur" => $_SESSION['username']
 		);
 	
-	array_push($_SESSION['messages'],$message);
+	array_push($messages,$message);
+	
+	
+	file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/datas/messages.json",json_encode($messages));
+	
+	
+	
 	
 	header('Location: '. $_SERVER['HTTP_REFERER'] .'');
 	exit;
