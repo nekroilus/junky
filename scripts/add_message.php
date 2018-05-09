@@ -2,7 +2,9 @@
 	session_start();
 	
 	$messages = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/datas/messages.json"),true);
-
+	if($messages === null){
+		$messages = array();
+	}
 	$message = array(
 			"titre" => $_POST['titre'],
 			"contenu" => $_POST['contenu'],

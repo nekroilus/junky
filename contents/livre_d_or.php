@@ -7,18 +7,19 @@
 			
 	<?php
 			$messages = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/datas/messages.json"),true);
+			if($messages !== null){
+				foreach($messages as $message){
+				?>
+				<div class="blog-post">
+					<h2 class="blog-post-title"><?= $message['titre']; ?></h2>
+					<p class="blog-post-meta"><?= $message['date']; ?> par <a href="#"><?= $message['auteur']; ?></a></p>
 
-			foreach($messages as $message){
-			?>
-			<div class="blog-post">
-				<h2 class="blog-post-title"><?= $message['titre']; ?></h2>
-				<p class="blog-post-meta"><?= $message['date']; ?> par <a href="#"><?= $message['auteur']; ?></a></p>
-
-				<p><?= $message['contenu']; ?></p>
-				<hr>
-			</div>
-				
-			<?php
+					<p><?= $message['contenu']; ?></p>
+					<hr>
+				</div>
+					
+				<?php
+				}				
 			}
 
 	?>
