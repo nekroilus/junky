@@ -7,14 +7,14 @@
 
 			<div class="blog-post">
 				<h2 class="blog-post-title">Excellent</h2>
-				<p class="blog-post-meta">January 1, 2014 part <a href="#">Mark</a></p>
+				<p class="blog-post-meta">January 1, 2014 par <a href="#">Mark</a></p>
 
 				<p>L'accueil est vraiment sympa les serveurs sont magiques. Je recommande !</p>
 				<hr>
 			</div>
 			<div class="blog-post">
 				<h2 class="blog-post-title">Bonne ambiance</h2>
-				<p class="blog-post-meta">January 1, 2015 part <a href="#">Marie</a></p>
+				<p class="blog-post-meta">January 1, 2015 par <a href="#">Marie</a></p>
 
 				<p>On s'est assises, on a mangé et on a bu. Comme dirai l'autre</p>
 				<hr>
@@ -27,7 +27,7 @@
 			?>
 			<div class="blog-post">
 				<h2 class="blog-post-title"><?= $message['titre']; ?></h2>
-				<p class="blog-post-meta"><?= $message['date']; ?> part <a href="#"><?= $message['auteur']; ?></a></p>
+				<p class="blog-post-meta"><?= $message['date']; ?> par <a href="#"><?= $message['auteur']; ?></a></p>
 
 				<p><?= $message['contenu']; ?></p>
 				<hr>
@@ -57,9 +57,10 @@
 				?>
 			<div class="p-3">
 				<h4 class="font-italic">Redigez le message :</h4>
-				<form class="form-inline mt-3 mt-md-0" method="POST" action="scripts/connexion.php">
-					<textarea class="form-control mr-sm-0 col-md-12" name="contenu"></textarea>
-					<button class="btn btn-outline-success my-2 my-sm-0">Valider</button>
+				<form class="form-inline mt-3 mt-md-0" method="POST" action="scripts/add_message.php">
+					<input type="text" class="form-control mr-sm-0 col-md-12 mt-3" name="titre" placeholder="titre">
+					<textarea class="form-control mr-sm-0 col-md-12 mt-3" name="contenu" placeholder="votre message" style="min-height:175px;"></textarea>
+					<button class="btn btn-outline-success mt-3">Valider</button>
 				</form>
 			</div>
 				<?php
@@ -69,7 +70,6 @@
 			<div class="p-3">
 			<h4 class="font-italic">Retrouvez nous :</h4>
 				<ol class="list-unstyled">
-				  <li><a href="#">GitHub</a></li>
 				  <li><a href="#">Twitter</a></li>
 				  <li><a href="#">Facebook</a></li>
 				</ol>
