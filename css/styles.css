@@ -1,0 +1,35 @@
+.bg-image{
+	background-image: url('../images/accueil_bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0% 0px;
+	min-height : 600px;
+}
+.bg-image-alt{
+	background-image: url('../images/accueil_bg_alt.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+@media screen and (min-width: 850px) {
+	.bg-image{
+		background-position: 0% -50px;
+	}
+}
+@media screen and (min-width: 11800px) {
+	.bg-image{
+		background-position: 0% -120px;
+	}
+}
+@media screen and (min-width: 1260px) {
+	.bg-image{
+		background-position: 0% -150px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.bg-image{
+		background-position: 0% -220px;
+	}
+}
+
