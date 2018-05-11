@@ -14,7 +14,8 @@
 foreach($files as $file){
 	if(is_file($linkPath . $file)){
 		$f = substr($file,0,strpos($file,".php"));
-		echo "<li class='nav-item'><a class='nav-link' href='/" . $f . "'>" . str_replace("_"," ",$f) . "</a></li>";
+		$active = (str_replace(" ","_",str_replace("/","",$_SERVER['REQUEST_URI'])) === $f)?"active":"";
+		echo "<li class='nav-item'><a class='nav-link ". $active ."' href='/" . $f . "'>" . str_replace("_"," ",$f) . "</a></li>";
 	}		
 }
 
