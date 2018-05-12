@@ -33,3 +33,17 @@
 	}
 }
 
+
+
+
+.bottomed{
+    position: absolute !important;
+    bottom: 0;
+}
+.up-5{
+    margin-top: -3.7rem;
+}
+
+.fa-star{
+    color: yellow !important;
+}

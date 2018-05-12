@@ -4,7 +4,7 @@
 
 		<h1 class="display-4 font-weight-normal">Restologist</h1>
 		<p class="lead font-weight-normal">Etes vous prêts pour bien bouffer ?.</p>
-		<a class="btn btn-outline-success" href="#">Choisissez la gargotte a votre goût</a>
+		<a class="btn btn-outline-success" href="./les_gargottes">Choisissez la gargotte a votre goût</a>
 	</div>
 	<div class="product-device box-shadow d-none d-md-block"></div>
 	<div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
